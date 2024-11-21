@@ -1,4 +1,6 @@
-# comshim [![GoDoc](https://godoc.org/github.com/doncicuto/comshim?status.svg)](https://godoc.org/github.com/doncicuto/comshim)
+# comshim [![GoDoc](https://godoc.org/github.com/scjalliance/comshim?status.svg)](https://godoc.org/github.com/scjalliance/comshim)
+
+**Notice**: This repo is just a clone of https://github.com/scjalliance/comshim with a few changes about error control. In the future if things go fine I'll fork the repo and propose some PR
 
 The comshim package provides a mechanism for maintaining an initialized
 multi-threaded component object model apartment.
@@ -106,5 +108,3 @@ func main() {
 	// Work with obj1 and obj2
 }
 ```
-
-Adding error control
