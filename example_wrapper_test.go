@@ -20,6 +20,7 @@ type Object struct {
 func NewObject() (*Object, error) {
 	if err := comshim.Add(1); err != nil {
 		log.Printf("[ERROR]: found and error adding thread in NewObject, %v", err)
+		return nil, err
 	}
 	iunknown, err := oleutil.CreateObject("Excel.Application")
 	if err != nil {
